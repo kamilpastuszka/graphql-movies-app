@@ -1,0 +1,38 @@
+{
+  "name": "graphql-movies-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamilpastuszka/graphql-movies-app.git"
+  },
+  "author": "Kamil Pastuszka",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.0.2",
+    "graphql-tools": "^4.0.3",
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.18.9"
+  },
+  "bugs": {
+    "url": "https://github.com/kamilpastuszka/graphql-movies-app/issues"
+  },
+  "homepage": "https://github.com/kamilpastuszka/graphql-movies-app#readme",
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "scripts": {
+    "start": "nodemon ./server.js --exec babel-node"
+  }
+}
