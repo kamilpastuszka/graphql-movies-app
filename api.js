@@ -28,7 +28,11 @@ const api = {
             release_date: val.release_date
           };
         });
-        return movies;
+        return _.chain(movies)
+          .sortBy("vote_average")
+          .reverse()
+          .take(5)
+          .value();
       })
       .catch(err => console.error("errror", err));
   }
